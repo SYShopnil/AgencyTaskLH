@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Font - Ubuntu*/
+@layer base {
+  @font-face {
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    src: url('../public/assets/fonts/Ubuntu-Regular.ttf') format('ttf');
+  }
+  @font-face {
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    src: url('../public/assets/fonts/Ubuntu-Medium.ttf') format('ttf');
+  }
+  @font-face {
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    src: url('../public/assets/fonts/Ubuntu-Bold.ttf') format('ttf');
+  }
+  @font-face {
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    src: url('../public/assets/fonts/Ubuntu-Bold.ttf') format('ttf');
+  }
+  @font-face {
+    font-family: 'PublicSans';
+    src: url('../public/assets/fonts/PublicSans-Black.ttf');
+  }
+}
+
+body,
+p {
+  @apply font-primary text-sm md:text-base text-accent_black;
+}
+
+html,
+body {
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/**
+* Used in all section components
+*/
