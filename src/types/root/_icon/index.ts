@@ -6,8 +6,10 @@ export enum IconName {
   FoxHub = 'FoxHub',
   Rectangle = 'Rectangle',
   Treva = 'Treva',
+  Arrow = 'Arrow',
 }
 
 export interface IIconStore {
   iconName: IconName;
+  fill?: string;
 }

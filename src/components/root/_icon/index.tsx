@@ -3,8 +3,9 @@ import React from 'react';
 import { AiTwotoneHome } from 'react-icons/ai';
 import { Aven, CodeLab, FoxHub, RectangleShape, Treva } from './partners';
 import Logo from './logo';
+import { Arrow } from './arrow';
 
-const IconStore = ({ iconName }: IIconStore) => {
+const IconStore = ({ iconName, fill }: IIconStore) => {
   switch (iconName) {
     case IconEnums.AiTwotoneHome: {
       return <AiTwotoneHome />;
@@ -26,6 +27,9 @@ const IconStore = ({ iconName }: IIconStore) => {
     }
     case IconEnums.Treva: {
       return <Treva />;
+    }
+    case IconEnums.Arrow: {
+      return <Arrow fillInput={fill || ''} />;
     }
   }
 };
