@@ -13,3 +13,5 @@ export { CurveFrameVariantEnum } from './curveFrame';
 
 export type { IInfoCard } from './infoCard';
 export type { ITitleDescSection } from './title_desc_sec/';
+
+export type { IBanner, IBannerSectionBar } from './banner-bar/banner.ts';

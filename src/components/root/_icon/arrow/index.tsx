@@ -1,6 +1,7 @@
+import { IFillInput } from '@src/types/utils';
 import React from 'react';
 
-export const Arrow = ({ fillInput }: { fillInput: string }) => {
+export const Arrow = ({ fillInput }: IFillInput) => {
   return (
     <svg
       width="inherit"
