@@ -10,7 +10,6 @@ module.exports = {
     extend: {
       fontFamily: {
         primary: ['PublicSans', 'sans-serif'],
-        secondary: ['Ubuntu', 'sans-serif'],
       },
       container: {
         center: true,

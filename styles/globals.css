@@ -5,28 +5,8 @@
 /* Font - Ubuntu*/
 @layer base {
   @font-face {
-    font-family: 'Ubuntu';
-    font-weight: 300;
-    src: url('../public/assets/fonts/Ubuntu-Regular.ttf') format('ttf');
-  }
-  @font-face {
-    font-family: 'Ubuntu';
-    font-weight: 400;
-    src: url('../public/assets/fonts/Ubuntu-Medium.ttf') format('ttf');
-  }
-  @font-face {
-    font-family: 'Ubuntu';
-    font-weight: 500;
-    src: url('../public/assets/fonts/Ubuntu-Bold.ttf') format('ttf');
-  }
-  @font-face {
-    font-family: 'Ubuntu';
-    font-weight: 700;
-    src: url('../public/assets/fonts/Ubuntu-Bold.ttf') format('ttf');
-  }
-  @font-face {
     font-family: 'PublicSans';
-    src: url('../public/assets/fonts/PublicSans-Black.ttf');
+    src: url('../public/assets/fonts/PublicSans-Medium.ttf');
   }
 }
 
