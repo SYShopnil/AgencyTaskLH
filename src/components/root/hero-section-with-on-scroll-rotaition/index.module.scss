@@ -1,0 +1,9 @@
+.layoutMainWrapper {
+  transition: all 0.5s ease;
+  &.onAppearPosition {
+    transform: rotateX(0deg);
+  }
+  &.initialPosition {
+    transform: rotateX(-61deg);
+  }
+}
