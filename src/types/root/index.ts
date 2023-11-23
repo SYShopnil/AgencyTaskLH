@@ -18,3 +18,4 @@ export type { IBanner, IBannerSectionBar } from './banner-bar/banner.ts';
 export type { ISlideCard } from './slide-card';
 
 export type { IHeroSectionWithOnScrollRotation } from './hero-section-with-on-scroll-rotaition/index';
+export type { IFooter } from './footer';
