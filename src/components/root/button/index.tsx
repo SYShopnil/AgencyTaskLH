@@ -53,7 +53,7 @@ const BaseButton = ({ btnText, colorSchema, isArrow }: IButton) => {
       onMouseLeave={() => setFillValue(setRootFillValue.initial)}
     >
       <span
-        className={`${appliedBtnInnerWrapperStyle}  ${appliedBtnBgColorStyle}`}
+        className={`${appliedBtnInnerWrapperStyle}  ${appliedBtnBgColorStyle}  w-[100%] h-[100%]`}
       >
         <span>{btnText}</span>
         {/* btn text part wrapper */}

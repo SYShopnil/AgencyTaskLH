@@ -1,0 +1,35 @@
+.active {
+  &.activeItemWrapper {
+    @apply bg-[#D3F699];
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    .activeArrowWrapper {
+      position: absolute;
+      right: -5%;
+      top: 39%;
+      transition: all 0.2s ease-in-out;
+      display: block;
+    }
+    .activeItemParagraphWrapper {
+      p {
+        @apply text-[#172029];
+        transition: all 0.5s ease-in-out;
+      }
+    }
+  }
+}
+.activeOneHoverVisibleSectionAnimation {
+  &.keyFrameTopToBottom {
+    visibility: hidden;
+    animation: topToBottom 0.5s ease-in;
+  }
+}
+@keyframes topToBottom {
+  0% {
+    transform: translateY(-1rem);
+  }
+  100% {
+    transform: translateY(0);
+    visibility: visible;
+  }
+}
