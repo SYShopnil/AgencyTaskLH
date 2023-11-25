@@ -30,7 +30,7 @@ export const Navbar = ({
         className={`space-y-[1.375rem] relative h-[12rem] min-w-[48.75rem]`}
         onMouseLeave={(e) => mouseOnLeaveNavItemHandler(e)}
       >
-        <ul className={`grid grid-cols-10 h-[3.5rem] space-x-[4.5rem]`}>
+        <ul className={`grid grid-cols-12 h-[3.5rem] `}>
           {navItems.map((navItem, ind) => {
             return (
               <li
