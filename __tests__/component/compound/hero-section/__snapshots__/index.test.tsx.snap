@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`When Hero Section has been loaded Expect it will render successfully 1`] = `
+<div
+  class="flex justify-center items-center flex-col p-3"
+  data-testid="heroSectionCatcher"
+>
+  <div
+    class="w-[100%] h-[auto] mb-[2.5rem]"
+  >
+    <p
+      class="text-center text-3xl  text-[#E9EAEC]"
+    >
+      <span
+        class=" innovativeSolutionPart animate"
+      >
+        Innovative Solutions
+         
+      </span>
+      <span
+        class="block "
+      >
+        for a
+         
+        <span
+          class=" digitalWorldPart normal"
+        >
+          Digital World
+        </span>
+      </span>
+      <span
+        class="block  trustedAgencyPart normal"
+      >
+         
+        Trusted Agency
+      </span>
+    </p>
+  </div>
+  <div
+    class="mb-[5rem]"
+  >
+    <p
+      class="text-center text-[#E9EAEC] text-lg"
+    >
+      Elevate Your Brand: Powerhouse Agency for Impactful Strategies
+    </p>
+  </div>
+  <div
+    class="flex justify-between space-x-[1.5rem]"
+  >
+    <div>
+      <a
+        href="/"
+        target="_blank"
+      >
+        <span
+          class="flex justify-center items-center  "
+        >
+          <span
+            class="text-base_2  flex justify-center items-center px-[1.5rem] py-[1rem] rounded-primary  bg-[transparent] hover:bg-primary_500 duration-[0.5s] text-primary_500 hover:text-neutral_500 border-[0.063rem] border-primary_500  w-[100%] h-[100%]"
+          >
+            <span>
+              Our Service
+            </span>
+          </span>
+        </span>
+      </a>
+    </div>
+    <div>
+      <a
+        href="/"
+        target="_blank"
+      >
+        <span
+          class="flex justify-center items-center  "
+        >
+          <span
+            class="text-base_2  flex justify-center items-center px-[1.5rem] py-[1rem] rounded-primary  bg-primary_500 hover:bg-[transparent]  duration-[0.5s] text-neutral_500 hover:text-primary_500  border-[0.063rem] border-primary_500  w-[100%] h-[100%]"
+          >
+            <span>
+              Work With Us
+            </span>
+          </span>
+        </span>
+      </a>
+    </div>
+    <div />
+  </div>
+</div>
+`;

@@ -1,5 +1,5 @@
 import { Button } from '@src/components/root';
-import { BtnColorSchema, IconEnums } from '@src/types/root';
+import { BtnColorSchema } from '@src/types/root';
 import React, { useState, useEffect } from 'react';
 import ModuleStyle from './index.module.scss';
 
@@ -7,8 +7,6 @@ export const HeroSection = () => {
   const animationVariation = ['Primary', 'Secondary', 'Gradient'];
   const [activeAnimationVariationIndex, setActiveAnimationVariationIndex] =
     useState<number>(0);
-  //   const [activeButtonVariant, setActiveButtonVariant] =
-  //     useState<BtnColorSchema>(BtnColorSchema.SolidBgPrimary500TextNeutral500);
   let activeButtonVariant: BtnColorSchema =
     BtnColorSchema.SolidBgPrimary500TextNeutral500;
   useEffect(() => {
@@ -25,6 +23,8 @@ export const HeroSection = () => {
 
   const activeAnimationVariation =
     animationVariation[activeAnimationVariationIndex];
+
+  // handle the button animation part
   switch (true) {
     case activeAnimationVariation == animationVariation[0]: {
       activeButtonVariant = BtnColorSchema.SolidBgPrimary500TextNeutral500;
@@ -43,7 +43,10 @@ export const HeroSection = () => {
     }
   }
   return (
-    <div className={`flex justify-center items-center flex-col p-3`}>
+    <div
+      className={`flex justify-center items-center flex-col p-3`}
+      data-testid="heroSectionCatcher"
+    >
       <div className={`w-[100%] h-[auto] mb-[2.5rem]`}>
         <p className={`text-center text-3xl  text-[#E9EAEC]`}>
           <span
