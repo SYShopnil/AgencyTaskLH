@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`When Navbar has been loaded Expect it will render successfully 1`] = `
+<nav
+  data-testid="navBarCatcher"
+>
+  <div
+    class="space-y-[1.375rem] relative h-[12rem] min-w-[48.75rem]"
+  >
+    <ul
+      class="grid grid-cols-10 h-[3.5rem] space-x-[4.5rem]"
+    >
+      <li
+        class="relative col-span-2  flex justify-center items-center cursor-pointer"
+      >
+        <a
+          class="text-[1.25rem] non-active"
+        >
+          Home
+        </a>
+        <div
+          class="activeDot false"
+        />
+      </li>
+      <li
+        class="relative col-span-2  flex justify-center items-center cursor-pointer"
+      >
+        <a
+          class="text-[1.25rem] non-active"
+        >
+          Services
+        </a>
+        <div
+          class="activeDot false"
+        />
+      </li>
+      <li
+        class="relative col-span-2  flex justify-center items-center cursor-pointer"
+      >
+        <a
+          class="text-[1.25rem] non-active"
+        >
+          Projects
+        </a>
+        <div
+          class="activeDot false"
+        />
+      </li>
+      <li
+        class="relative col-span-2  flex justify-center items-center cursor-pointer"
+      >
+        <a
+          class="text-[1.25rem] non-active"
+        >
+          Blogs
+        </a>
+        <div
+          class="activeDot false"
+        />
+      </li>
+      <li
+        class="col-span-2"
+      >
+        <span>
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+          >
+            <span
+              class="flex justify-center items-center  "
+            >
+              <span
+                class="text-base_2  flex justify-center items-center px-[1.5rem] py-[1rem] rounded-primary  bg-[transparent] hover:bg-primary_500 duration-[0.5s] text-primary_500 hover:text-neutral_500 border-[0.063rem] border-primary_500  w-[100%] h-[100%]"
+              >
+                <span>
+                  Get In Touch
+                </span>
+              </span>
+            </span>
+          </a>
+        </span>
+      </li>
+    </ul>
+    <div
+      class="setMegaMenuBarPosition"
+    />
+  </div>
+</nav>
+`;

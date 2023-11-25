@@ -1,6 +1,9 @@
 export enum BtnColorSchema {
   TransparentBgTextPrimary500 = 'TransparentBgTextPrimary500',
-  SolidBgPrimary300TextNeutral500 = 'SolidBgPrimary500TextNeutral500',
+  SolidBgPrimary300TextNeutral500 = 'SolidBgPrimary300TextNeutral500',
+  SolidBgPrimary500TextNeutral500 = 'SolidBgPrimary500TextNeutral500',
+  SolidSecondary300TextNeutral500 = 'SolidSecondary300TextNeutral500',
+  SolidPrimaryGradientTextNeutral500 = 'SolidPrimaryGradientTextNeutral500',
 }
 export interface IButton {
   btnText: string;

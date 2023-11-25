@@ -9,7 +9,7 @@ export const SectionOne = ({
 }: sectionOne) => {
   return (
     <div className={`space-y-[2.5rem]`}>
-      <div className={`w-[9.116rem] h-[5rem]`}>
+      <div className={`w-[9.116rem] h-[5rem] fill-primary_500`}>
         <IconStore iconName={logo} />
       </div>
       <div className={`text-[1.25rem] `}>
