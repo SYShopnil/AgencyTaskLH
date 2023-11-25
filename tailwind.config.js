@@ -44,7 +44,8 @@ module.exports = {
         neutral_500: '#1E2A37',
       },
       backgroundImage: {
-        primaryGradient: 'linear-gradient(180deg, #FC7C23 0%, #F366B9 100%)',
+        primaryGradient:
+          'linear-gradient(90deg, #90E900 0.33%, #EFE600 100.33%)',
       },
       fontSize: {
         base: ['0.875rem', { lineHeight: '150%', fontWeight: 400 }],

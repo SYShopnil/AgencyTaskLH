@@ -28,9 +28,27 @@ const BaseButton = ({ btnText, colorSchema, isArrow }: IButton) => {
       break;
     }
 
-    case BtnColorSchema.SolidBgPrimary300TextNeutral500: {
-      appliedBtnBgColorStyle = `bg-primary_300 hover:bg-[transparent]  duration-[0.5s] text-neutral_500 hover:text-primary_500  border-[0.063rem] border-primary_300`;
+    case BtnColorSchema.SolidBgPrimary500TextNeutral500: {
+      appliedBtnBgColorStyle = `bg-primary_500 hover:bg-[transparent]  duration-[0.5s] text-neutral_500 hover:text-primary_500  border-[0.063rem] border-primary_500`;
       setRootFillValue['onHover'] = '#90E900';
+      setRootFillValue['initial'] = '#1E2A37';
+      break;
+    }
+    case BtnColorSchema.SolidBgPrimary300TextNeutral500: {
+      appliedBtnBgColorStyle = `bg-primary_300 hover:bg-[transparent]  duration-[0.5s] text-neutral_500 hover:text-primary_300  border-[0.063rem] border-primary_300`;
+      setRootFillValue['onHover'] = '#90E900';
+      setRootFillValue['initial'] = '#1E2A37';
+      break;
+    }
+    case BtnColorSchema.SolidPrimaryGradientTextNeutral500: {
+      appliedBtnBgColorStyle = `bg-primaryGradient hover:bg-none  duration-[0.5s] text-neutral_500 hover:text-primary_500  border-[0.063rem] border-primary_500`;
+      setRootFillValue['onHover'] = '#90E900';
+      setRootFillValue['initial'] = '#1E2A37';
+      break;
+    }
+    case BtnColorSchema.SolidSecondary300TextNeutral500: {
+      appliedBtnBgColorStyle = ` bg-secondary_300 hover:bg-[transparent]  duration-[0.5s] text-neutral_500 hover:text-secondary_300  border-[0.063rem] border-secondary_300 `;
+      setRootFillValue['onHover'] = '#F5F066';
       setRootFillValue['initial'] = '#1E2A37';
       break;
     }
