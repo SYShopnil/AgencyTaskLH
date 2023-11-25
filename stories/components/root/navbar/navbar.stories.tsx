@@ -1,3 +1,4 @@
+import { navBarMockData } from '@root/__mock-props__/component/root/navbar';
 import { Navbar } from '@src/components/root';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import 'tailwindcss/tailwind.css';
@@ -13,14 +14,21 @@ export default {
  * Navbar  Template
  *
  */
+// const NavbarTemplate: ComponentStory<typeof Navbar> = (arg) => {
+//   return (
+//     <div className="container ">
+//       <div className={`flex justify-center items-center h-screen`}>
+//         <div>
+//           <Navbar {...arg} />
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
 const NavbarTemplate: ComponentStory<typeof Navbar> = (arg) => {
   return (
-    <div className="container ">
-      <div className={`flex justify-center items-center h-screen`}>
-        <div>
-          <Navbar {...arg} />
-        </div>
-      </div>
+    <div className={`bg-[#1E2A37] h-screen`}>
+      <Navbar {...arg} />
     </div>
   );
 };
@@ -31,4 +39,4 @@ const NavbarTemplate: ComponentStory<typeof Navbar> = (arg) => {
  *
  */
 export const NavbarDemo = NavbarTemplate.bind({});
-NavbarDemo.args = {};
+NavbarDemo.args = navBarMockData;

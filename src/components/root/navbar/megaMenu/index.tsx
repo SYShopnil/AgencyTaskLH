@@ -1,142 +1,10 @@
-import { IconEnums } from '@src/types/root';
+import { IMegaMenu, IconEnums } from '@src/types/root';
 import React, { useState } from 'react';
 import OnHoverVisibleSection from './onApearVIsualPart';
 import ModuleStyle from './index.module.scss';
 import IconStore from '../../_icon';
 
-interface IMegaNavFirstChild {
-  itemTitle: string;
-  subTitle: string;
-  subItems: IMegaNavSecondChild[];
-}
-interface IMegaNavSecondChild
-  extends Pick<IMegaNavFirstChild, 'itemTitle' | 'subTitle'> {
-  iconName: IconEnums;
-}
-
-export const MegaMenu = ({}) => {
-  //copy from child (not need here)
-  interface ICommonSection {
-    logo: IconEnums.Logo;
-    title: string;
-    redirectLInk: string;
-  }
-
-  //copy from child (not need here)
-  interface ISubMenuBlock {
-    iconName: IconEnums;
-    title: string;
-    subTitle: string;
-    link: string;
-  }
-
-  interface IMegaMenuItems {
-    heading: string;
-    subHeading: string;
-    contents: ISubMenuBlock[];
-  }
-
-  //not need here
-  const dummyCommonSection: ICommonSection = {
-    logo: IconEnums.Logo,
-    redirectLInk: 'https://www.facebook.com/',
-    title: `The Best Design Agency`,
-  };
-
-  //not need here
-  const menuItemsDummyData: ISubMenuBlock[] = [
-    {
-      iconName: IconEnums.NavIconOne,
-      link: 'https://www.facebook.com/',
-      subTitle: 'Offline-capable web apps',
-      title: 'Progressive Web Apps',
-    },
-    {
-      iconName: IconEnums.NavIconOne,
-      link: 'https://www.facebook.com/',
-      subTitle: 'Offline-capable web apps',
-      title: 'Progressive Web Apps',
-    },
-    {
-      iconName: IconEnums.NavIconOne,
-      link: 'https://www.facebook.com/',
-      subTitle: 'Offline-capable web apps',
-      title: 'Progressive Web Apps',
-    },
-    {
-      iconName: IconEnums.NavIconOne,
-      link: 'https://www.facebook.com/',
-      subTitle: 'Offline-capable web apps',
-      title: 'Progressive Web Apps',
-    },
-    {
-      iconName: IconEnums.NavIconOne,
-      link: 'https://www.facebook.com/',
-      subTitle: 'Offline-capable web apps',
-      title: 'Progressive Web Apps',
-    },
-  ];
-
-  //not need here
-  const menuItemsDummyDataTwo: ISubMenuBlock[] = [
-    {
-      iconName: IconEnums.NavIconOne,
-      link: 'https://www.facebook.com/',
-      subTitle: 'Offline-capable Mobile apps',
-      title: 'Progressive Mobile Apps',
-    },
-    {
-      iconName: IconEnums.NavIconOne,
-      link: 'https://www.facebook.com/',
-      subTitle: 'Offline-capable Web apps',
-      title: 'Progressive Mobile Apps',
-    },
-    {
-      iconName: IconEnums.NavIconOne,
-      link: 'https://www.facebook.com/',
-      subTitle: 'Offline-capable Mobile apps',
-      title: 'Progressive Mobile Apps',
-    },
-    {
-      iconName: IconEnums.NavIconOne,
-      link: 'https://www.facebook.com/',
-      subTitle: 'Offline-capable Mobile apps',
-      title: 'Progressive Mobile Apps',
-    },
-    {
-      iconName: IconEnums.NavIconOne,
-      link: 'https://www.facebook.com/',
-      subTitle: 'Offline-capable Mobile apps',
-      title: 'Progressive Mobile Apps',
-    },
-  ];
-
-  //not need here
-  const dummyMegaMenuItems: IMegaMenuItems[] = [
-    {
-      heading: 'Headless website',
-      subHeading: 'Build modern, decoupled web experiences',
-      contents: menuItemsDummyData,
-    },
-    {
-      heading: 'Headless website',
-      subHeading: 'Build modern, decoupled web experiences',
-      contents: menuItemsDummyDataTwo,
-    },
-    {
-      heading: 'Headless website',
-      subHeading: 'Build modern, decoupled web experiences',
-      contents: menuItemsDummyData,
-    },
-    {
-      heading: 'Headless website',
-      subHeading: 'Build modern, decoupled web experiences',
-      contents: menuItemsDummyDataTwo,
-    },
-  ];
-
-  const [menuItems, setMenuItems] =
-    useState<IMegaMenuItems[]>(dummyMegaMenuItems);
+export const MegaMenu = ({ commonPart, menuItems }: IMegaMenu) => {
   const [activeItem, setActiveItem] = useState<number>(0);
 
   const onMouseEnterHandler = (
@@ -150,12 +18,11 @@ export const MegaMenu = ({}) => {
     e: React.MouseEvent<HTMLDivElement, MouseEvent>,
     ind: number
   ) => {
-    console.log(`Exit ${ind}`);
     e.preventDefault();
   };
   return (
     <div
-      className={`grid grid-cols-12 gap-2 bg-neutral_500 p-4 rounded-[1.25rem]`}
+      className={`grid grid-cols-12 gap-2 bg-neutral_500 p-4 rounded-[1.25rem] duration-75 `}
     >
       {/* menu items wrapper */}
       <div
@@ -197,7 +64,7 @@ export const MegaMenu = ({}) => {
               {ind == activeItem && (
                 <div className={`duration-[0.5s] `}>
                   <OnHoverVisibleSection
-                    commonSection={dummyCommonSection}
+                    commonSection={commonPart}
                     menuItems={item.contents}
                   />
                 </div>

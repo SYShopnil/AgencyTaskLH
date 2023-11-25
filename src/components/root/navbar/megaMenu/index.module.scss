@@ -33,3 +33,22 @@
     visibility: visible;
   }
 }
+
+// .megaMenuWrapper {
+//   opacity: 0;
+//   height: 0;
+//   transition: all 5s ease-in-out;
+//   &.show {
+//     opacity: 1;
+//     height: 25rem;
+//   }
+// }
+.megaMenuWrapper {
+  opacity: 0;
+  height: 0;
+  transition: all 5s ease-in-out;
+}
+.megaMenuWrapper.show {
+  opacity: 1;
+  height: auto;
+}

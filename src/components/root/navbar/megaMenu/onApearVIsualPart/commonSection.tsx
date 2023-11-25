@@ -1,13 +1,7 @@
-import { BtnColorSchema, IconEnums } from '@src/types/root';
+import { BtnColorSchema, ICommonSection } from '@src/types/root';
 import React from 'react';
 import IconStore from '../../../_icon';
 import Button from '../../../button';
-
-interface ICommonSection {
-  logo: IconEnums.Logo;
-  title: string;
-  redirectLInk: string;
-}
 
 export const CommonSection = ({
   logo,

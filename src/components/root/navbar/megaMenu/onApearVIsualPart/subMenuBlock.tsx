@@ -1,14 +1,7 @@
-import { IconEnums } from '@src/types/root';
+import { ISubMenuBlock } from '@src/types/root';
 import React from 'react';
 import IconStore from '../../../_icon';
 import Link from 'next/link';
-
-interface ISubMenuBlock {
-  iconName: IconEnums;
-  title: string;
-  subTitle: string;
-  link: string;
-}
 
 export const SubMenuBlock = ({
   iconName,

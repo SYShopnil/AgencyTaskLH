@@ -1,25 +1,8 @@
-import { IconEnums } from '@src/types/root';
+import { ICommonSection, ISubMenuBlock } from '@src/types/root';
 import React from 'react';
 import { CommonSection } from './commonSection';
 import { SubMenuBlock } from './subMenuBlock';
-import ModuleStyle from '../index.module.scss';
 
-//copy from child
-interface ICommonSection {
-  logo: IconEnums.Logo;
-  title: string;
-  redirectLInk: string;
-}
-
-//copy from child
-interface ISubMenuBlock {
-  iconName: IconEnums;
-  title: string;
-  subTitle: string;
-  link: string;
-}
-
-//totally new
 interface IOnHoverVisibleSection {
   menuItems: ISubMenuBlock[];
   commonSection: ICommonSection;
