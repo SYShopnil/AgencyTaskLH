@@ -89,14 +89,24 @@ function Slide({
 }
 
 const styles: any = {
+  0: {
+    transform: 'scale(0.8)',
+    top: '22%',
+    opacity: 1,
+  },
   1: {
-    transform: ' scale(0.85)',
-    top: '17%',
-    opacity: 0.5,
+    transform: 'scale(0.85)',
+    top: '42%',
+    opacity: 1,
   },
   2: {
     transform: 'scale(0.9)',
     top: '44%',
+    opacity: 1,
+  },
+  3: {
+    transform: 'scale(0.95)',
+    top: '46%',
     opacity: 1,
   },
 };
