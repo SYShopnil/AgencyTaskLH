@@ -1,12 +1,10 @@
 import React, { Component, useState } from 'react';
-import VerticalCarousel from './VerticalCarousel';
+import { VerticalCarousel } from './VerticalCarousel';
 import { config } from 'react-spring';
 import { IVerticalCarouselSectionMain } from '@src/types/compound/vertical-slider-section';
 import { useInView } from 'react-intersection-observer';
 
-export default function VerticalCarouselMain({
-  slides,
-}: IVerticalCarouselSectionMain) {
+export function VerticalCarouselMain({ slides }: IVerticalCarouselSectionMain) {
   const [offsetRadius, setOffsetRadius] = useState(5);
   const [showNavigation, setShowNavigation] = useState(false);
   const [configSet, setConfig] = useState(config.gentle);

@@ -31,7 +31,7 @@ interface IVerticalCarousel {
   inView: boolean;
 }
 
-class VerticalCarousel extends React.Component<IVerticalCarousel> {
+export class VerticalCarousel extends React.Component<IVerticalCarousel> {
   state = {
     index: 0,
     goToSlide: null,
@@ -145,5 +145,3 @@ class VerticalCarousel extends React.Component<IVerticalCarousel> {
     );
   }
 }
-
-export default VerticalCarousel;

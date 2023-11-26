@@ -6,7 +6,7 @@ import {
   HeroWithOnScrollRotation,
   PartnerSection,
 } from '@src/components/compound';
-import VerticalCarouselMain from '@src/components/compound/vertical-slider-section';
+import { VerticalCarouselMain } from '@src/components/compound/vertical-slider-section';
 
 export const Home = ({
   footerElement,

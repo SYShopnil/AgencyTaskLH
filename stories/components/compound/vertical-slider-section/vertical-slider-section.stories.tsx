@@ -1,5 +1,5 @@
 import { verticalSliderSectionMockData } from '@root/__mock-props__/component/compound/veticla-slider-section';
-import VerticalCarouselMain from '@src/components/compound/vertical-slider-section';
+import { VerticalCarouselMain } from '@src/components/compound/vertical-slider-section';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import 'tailwindcss/tailwind.css';
 
