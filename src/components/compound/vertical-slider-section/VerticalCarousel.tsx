@@ -28,9 +28,10 @@ interface IVerticalCarousel {
   offsetRadius: any;
   showNavigation: any;
   animationConfig: any;
+  inView: boolean;
 }
 
-class VerticalCarousel extends React.Component<IVerticalCarousel> {
+export class VerticalCarousel extends React.Component<IVerticalCarousel> {
   state = {
     index: 0,
     goToSlide: null,
@@ -58,8 +59,8 @@ class VerticalCarousel extends React.Component<IVerticalCarousel> {
         this.moveSlide(1);
       }
     });
-    document.addEventListener('wheel', this.handleScroll);
   };
+
   componentWillUnmount() {
     // Cleanup: Remove event listener when the component is unmounted
     document.removeEventListener('wheel', this.handleScroll);
@@ -122,7 +123,10 @@ class VerticalCarousel extends React.Component<IVerticalCarousel> {
   }
 
   render() {
-    const { animationConfig, offsetRadius, showNavigation }: any = this.props;
+    const { animationConfig, offsetRadius, inView }: any = this.props;
+    inView
+      ? document.addEventListener('wheel', this.handleScroll)
+      : document.removeEventListener('wheel', this.handleScroll);
     return (
       <React.Fragment>
         <Wrapper>
@@ -141,5 +145,3 @@ class VerticalCarousel extends React.Component<IVerticalCarousel> {
     );
   }
 }
-
-export default VerticalCarousel;

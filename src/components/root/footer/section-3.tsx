@@ -1,5 +1,4 @@
 import { IFooter } from '@src/types/root';
-import Link from 'next/link';
 import React from 'react';
 
 type typeSectionThree = Pick<IFooter, 'sectionThree'>;
@@ -12,16 +11,12 @@ export const SectionThree = ({
       {socialMediaLinks.map((socialMedia, index) => {
         return (
           <a
-            href=""
+            href={socialMedia.link}
+            target={socialMedia.isOpenNewTab ? '_blank' : '_self'}
             key={index}
             className={`block text-[#FEFEFE] hover:text-primary_500 hover:underline duration-[0.5s] text-[1.25rem]`}
           >
-            <Link
-              href={socialMedia.link}
-              target={socialMedia.isOpenNewTab ? '_blank' : '_self'}
-            >
-              {socialMedia.name}
-            </Link>
+            {socialMedia.name}
           </a>
         );
       })}

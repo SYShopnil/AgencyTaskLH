@@ -9,7 +9,7 @@ export const CommonLayout = ({
   footerElement,
 }: ICommonLayout) => {
   return (
-    <body className={` w-[80%]`}>
+    <div className={` w-[85%]`}>
       <header className={`mt-[1.5rem]`}>
         <Header {...headerElements} />
       </header>
@@ -17,6 +17,6 @@ export const CommonLayout = ({
       <footer className={`my-[7.5rem]`}>
         <Footer {...footerElement} />
       </footer>
-    </body>
+    </div>
   );
 };

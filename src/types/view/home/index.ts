@@ -3,6 +3,7 @@ import {
   IHeroWithOnScrollRotation,
   IPartnerSection,
 } from '@src/types/compound';
+import { IVerticalCarouselSectionMain } from '@src/types/compound/vertical-slider-section';
 import { IFooter } from '@src/types/root';
 
 export interface IHomePage {
@@ -11,6 +12,6 @@ export interface IHomePage {
   sectionElements: {
     sectionOne: IHeroWithOnScrollRotation;
     sectionTwo: IPartnerSection;
-    sectionThree?: any; //not complete yet so that type was not declare
+    sectionThree: IVerticalCarouselSectionMain;
   };
 }
