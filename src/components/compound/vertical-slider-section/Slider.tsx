@@ -90,23 +90,18 @@ function Slide({
 
 const styles: any = {
   0: {
-    transform: 'scale(0.8)',
+    transform: 'translateX(0%) translateY(-41.7%) scale(0.8)',
     top: '22%',
-    opacity: 1,
+    opacity: 0,
   },
   1: {
-    transform: 'scale(0.85)',
-    top: '42%',
-    opacity: 1,
+    transform: 'translateX(0%) translateY(-80%) scale(0.85)',
+    top: '59%',
+    opacity: 0.3,
   },
   2: {
-    transform: 'scale(0.9)',
-    top: '44%',
-    opacity: 1,
-  },
-  3: {
-    transform: 'scale(0.95)',
-    top: '46%',
+    transform: 'translateX(0%) translateY(-70%) scale(0.9)',
+    top: '69%',
     opacity: 1,
   },
 };
