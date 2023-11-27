@@ -1,48 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Key Technologies
 
-## Content
+**Client-Side:** Next js, TailwindCSS
 
-- [Project Dependencies](/README.md#project-dependecies)
-- [Getting Started](/README.md#getting-started)
-- [Custom Path Shortcuts](/README.md#custom-path-shortcuts)
-- [Apollo Graphql](/README.md#apollo-graphql)
+**Language:** TypeScript
 
-## This project template uses:
+**Documentation**: React-StoryBook
 
-- Storybook
-- Apollo Graphql
-- Tailwind css
-- Typescript
+## Demo
 
-## Getting Started
+- **Landing page**
+  <img src = "public/webDemo/landingPage.png"  >
 
-First, run the development server:
+- **Landing page with Navbar**
+  <img src = "public/webDemo/landingPageTwoWithNavbar.png"  >
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Run Locally
 
-See the storybook
+Clone the project
 
 ```bash
-npm run storybook
-# or
-yarn storybook
+  git clone https://github.com/SYShopnil/AgencyTaskLH.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-Open [http://localhost:6006](http://localhost:6006) with your browser to see the storybook result (tested).
+Go to the project directory
 
-## Custom Path Shortcuts
+```bash
+  cd
+  AgencyTaskLH
+```
 
-- **@src/\*** : ./src folder
-- **@pages/\***: ./pages folder
-- **@styles/\*** : ./styles folder
-- **@root/\*** : root directory
+Install dependencies
 
-## Some Screenshots
+```bash
+  npm install || npm i
+```
 
-<img src = "public/webDemo/landingPage.png"  >
-<img src = "public/webDemo/landingPageTwoWithNavbar.png"  >
+Start the server
+
+```bash
+  npm run dev
+```
+
+Start the StoryBook
+
+```bash
+  npm run storybook
+```
+
+## Installation
+
+Install my-project with npm
+
+```bash
+  npm install || npm i
+```
+
+## Support
+
+For support, sadmanishopnil@gmail.com
