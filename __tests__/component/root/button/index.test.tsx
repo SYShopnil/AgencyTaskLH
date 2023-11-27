@@ -1,10 +1,4 @@
 /**
- *  TO DO
- *
- *
- */
-
-/**
  *  DONE
  *
  *  Check render successfully of not by taking a snapshot

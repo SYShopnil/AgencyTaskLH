@@ -1,43 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Key Technologies
 
-## Content
+**Client-Side:** Next js, TailwindCSS
 
-- [Project Dependencies](/README.md#project-dependecies)
-- [Getting Started](/README.md#getting-started)
-- [Custom Path Shortcuts](/README.md#custom-path-shortcuts)
-- [Apollo Graphql](/README.md#apollo-graphql)
+**Language:** TypeScript
 
-## This project template uses:
+**Documentation**: React-StoryBook
 
-- Storybook
-- Apollo Graphql
-- Tailwind css
-- Typescript
+## Demo
 
-## Getting Started
+- **Landing page**
+  <img src = "public/webDemo/landingPage.png"  >
 
-First, run the development server:
+- **Landing page with Navbar**
+  <img src = "public/webDemo/landingPageTwoWithNavbar.png"  >
+
+## Run Locally
+
+Clone the project
 
 ```bash
-npm run dev
-# or
-yarn dev
+  git clone https://github.com/SYShopnil/AgencyTaskLH.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Go to the project directory
 
-## Custom Path Shortcuts
+```bash
+  cd
+  AgencyTaskLH
+```
 
-- **@src/\*** : ./src folder
-- **@pages/\***: ./pages folder
-- **@styles/\*** : ./styles folder
-- **@root/\*** : root directory
+Install dependencies
 
-## Apollo Graphql
+```bash
+  npm install || npm i
+```
 
-There are different ways to configure apollo client for different
-next.js render methods (i.e static page generation, server side rendering)
+Start the server
 
-We need to configure our implementation as needed.
+```bash
+  npm run dev
+```
 
-[Getting Started Apollo](https://www.apollographql.com/blog/apollo-client/next-js/next-js-getting-started/)
+Start the StoryBook
+
+```bash
+  npm run storybook
+```
+
+## Installation
+
+Install my-project with npm
+
+```bash
+  npm install || npm i
+```
+
+## Support
+
+For support, sadmanishopnil@gmail.com

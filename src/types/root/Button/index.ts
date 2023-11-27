@@ -1,10 +1,15 @@
 export enum BtnColorSchema {
-  BlackBgTextWhite = 'BlackBgTextWhite',
+  TransparentBgTextPrimary500 = 'TransparentBgTextPrimary500',
+  SolidBgPrimary300TextNeutral500 = 'SolidBgPrimary300TextNeutral500',
+  SolidBgPrimary500TextNeutral500 = 'SolidBgPrimary500TextNeutral500',
+  SolidSecondary300TextNeutral500 = 'SolidSecondary300TextNeutral500',
+  SolidPrimaryGradientTextNeutral500 = 'SolidPrimaryGradientTextNeutral500',
 }
 export interface IButton {
   btnText: string;
   colorSchema: BtnColorSchema;
   dataTestId?: string;
+  isArrow: boolean;
 }
 export interface INormalButton extends IButton {
   clickHandler?: (

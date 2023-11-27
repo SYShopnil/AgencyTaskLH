@@ -24,6 +24,11 @@ export default {
       },
       options: [...Object.values(BtnColorSchema)],
     },
+    isArrow: {
+      control: {
+        type: 'boolean',
+      },
+    },
   },
 } as ComponentMeta<typeof Button>;
 

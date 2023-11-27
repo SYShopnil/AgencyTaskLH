@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`When Slide Card has been rendered Expect Successfully Rendered 1`] = `
+<div
+  class="grid grid-cols-12 bg-[#172029] !py-[7.5rem] !px-[5rem] !rounded-[2.5rem]  border-solid border mainWrapper borderStyle active mainWrapper "
+  data-testid="slideCardTestIdOne"
+>
+  <div
+    class="col-span-7 mr-[7.75rem]"
+  >
+    <div
+      class="mb-[1.5rem]"
+    >
+      <p
+        class="text-[#D3F699] text-3xl"
+      >
+        02
+      </p>
+    </div>
+    <div
+      class="mb-[1.5rem]"
+    >
+      <p
+        class="text-primary_500 text-2xl"
+      >
+        Pre-processing
+      </p>
+    </div>
+    <div>
+      <p
+        class="text-[#FEFEFE] text-lg"
+      >
+        Your data is organized, cleaned, and given context as we interpret
+            it. Your data gains meaning through the semantic layer, making it
+            simpler for business users to comprehend. We assist you in gaining a
+            clear understanding of what it signifies so you can take action.
+      </p>
+    </div>
+  </div>
+  <div
+    class="col-span-5 flex justify-center items-center"
+  >
+    <div>
+      <span
+        style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+      >
+        <span
+          style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+        >
+          <img
+            alt=""
+            aria-hidden="true"
+            src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27490%27%20height=%27559%27/%3e"
+            style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+          />
+        </span>
+        <img
+          alt="Picture of the author"
+          data-nimg="intrinsic"
+          decoding="async"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+        />
+        <noscript />
+      </span>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,25 @@
+.setMegaMenuBarPosition {
+  position: absolute;
+  right: 10%;
+}
+
+.active {
+  @apply text-primary_500;
+  transition: all 0.5s ease;
+}
+.non-active {
+  @apply text-[#FEFEFE];
+  transition: all 0.5s ease;
+}
+
+.activeDot {
+  @apply w-[0.5rem] h-[0] rounded-[100%] bg-primary_500;
+  position: absolute;
+  transform: translate(-50%, 300%);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  &.show {
+    @apply h-[0.5rem];
+    opacity: 1;
+  }
+}
