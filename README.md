@@ -44,4 +44,4 @@ Open [http://localhost:6006](http://localhost:6006) with your browser to see the
 
 ## Some Screenshots
 
-<img src = "public/webDemo/landingPage.png.png"  >
+<img src = "public/webDemo/landingPage.png"  >
