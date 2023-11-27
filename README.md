@@ -24,7 +24,16 @@ npm run dev
 yarn dev
 ```
 
+See the storybook
+
+```bash
+npm run storybook
+# or
+yarn storybook
+```
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:6006](http://localhost:6006) with your browser to see the storybook result (tested).
 
 ## Custom Path Shortcuts
 
@@ -33,11 +42,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - **@styles/\*** : ./styles folder
 - **@root/\*** : root directory
 
-## Apollo Graphql
+## Some Screenshots
 
-There are different ways to configure apollo client for different
-next.js render methods (i.e static page generation, server side rendering)
-
-We need to configure our implementation as needed.
-
-[Getting Started Apollo](https://www.apollographql.com/blog/apollo-client/next-js/next-js-getting-started/)
+<img src = "public/webDemo/landingPage.png.png"  >
